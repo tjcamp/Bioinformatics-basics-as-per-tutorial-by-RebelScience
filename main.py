@@ -1,11 +1,11 @@
 from bio_seq import bio_seq
 from utilities import readFASTA, readTextFile, writeTextFile
 
-test_DNA = bio_seq()
+test_DNA = bio_seq(sequence, label= label_name)
 print(test_DNA.get_seq_info())
 
-test_DNA.generate_rnd_seq(40, "RNA")
-print(test_DNA.get_seq_info())
+#test_DNA.generate_rnd_seq(40, "RNA")
+#print(test_DNA.get_seq_info())
 
 print(test_DNA.nuc_freq())
 print(test_DNA.transcription())
